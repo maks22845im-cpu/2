@@ -1,0 +1,133 @@
+/* Сброс базовых отступов */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Общий контейнер (ограничение ширины контента и меню - 960px) */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- ШАПКА САЙТА (HEADER) --- */
+#main-header {
+    background-color: #5bb3e6; /* Голубой цвет из макета */
+    width: 100%; /* Шапка на всю ширину окна */
+    padding: 15px 0;
+    border-bottom: 1px solid #3a93c7;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-block {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#logo {
+    width: 60px;
+    height: 60px;
+    background-color: #a0d4f5;
+    border: 2px solid #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#site-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* --- МЕНЮ (NAV) --- */
+#main-nav {
+    display: flex;
+    gap: 15px;
+}
+
+#main-nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+#main-nav a:hover {
+    text-decoration: underline;
+}
+
+/* --- ОСНОВНОЙ КОНТЕНТ (MAIN) --- */
+#content {
+    background-color: #fff;
+    padding: 30px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+    border-bottom: 2px solid #5bb3e6;
+    padding-bottom: 5px;
+}
+
+/* --- ТАБЛИЦА --- */
+#data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#data-table th, 
+#data-table td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Строка заголовков */
+#data-table th {
+    background-color: #5bb3e6;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Разный фон для четных и нечетных строк (по заданию) */
+#data-table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+#data-table tbody tr:nth-child(even) {
+    background-color: #e6f2f9; /* Светло-голубой оттенок */
+}
+
+/* --- ПОДВАЛ САЙТА (FOOTER) --- */
+#main-footer {
+    background-color: #5bb3e6; /* Голубой цвет из макета */
+    width: 100%; /* Подвал на всю ширину окна */
+    padding: 20px 0;
+    border-top: 1px solid #3a93c7;
+    font-weight: bold;
+}
